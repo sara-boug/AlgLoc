@@ -33,4 +33,7 @@
           $(".toggle_leftbar").css("opacity","1");
 
     });
+    window.addEventListener('scroll', function() {
+  console.log("Scrollin'");
+});
  });
