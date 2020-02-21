@@ -1,0 +1,178 @@
+*{
+  font-family: 'Advent Pro';
+
+}
+body {
+  background-color:#1b1818;
+  display: flex;
+  padding :0;
+  margin:0;
+  height: 650px;
+  width:100%;
+  outline: none;
+  color: white;
+  overflow: hidden;
+}
+.sideBar{
+  width: 15%;
+}
+.sideBar iframe{
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+.main{
+  display: flex;
+  flex-direction:column;
+  width: 100%;
+  height:100%;
+  justify-content: space-around;
+}
+.main .recap{
+  display :flex;
+  height:55%;
+  width: 100%;
+  flex-direction:  row-reverse;
+}
+/* part of the overal recap in number */
+.recap .numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25%;
+  height:95%;
+  margin:10px;
+  background-color:rgba(193,193,193,0.05);
+  border-radius: 5px;
+
+}
+.numbers .onePart {
+  margin:auto;
+  display: flex;
+  width: 90%;
+  height:19%;
+  background-color:rgba(193, 193, 193, 0.16);
+   border-radius: 4px;
+  justify-content: space-between;
+
+}
+.onePart .icon{
+  width:25%;
+  height: 100%;
+  background-color: #023859;
+  text-align: center;
+  border-radius: 4px 0px 0px 4px ;
+
+}
+.icon i {
+  margin-top: 20%;
+  font-size: 30px;
+  color: #d0f2f252;
+}
+.onePart .info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:flex-start;
+   width: 70%;
+  height:70%;
+   font-weight: lighter;
+  color: black;
+
+}
+.info div {
+  align-self: center;
+ height: 30%;
+ width: 100%;
+ }
+ div.title{
+     font-size: 17px;
+ color: #bee4fb;
+  }
+ div.num{
+  font-size: 20px;
+   font-weight: bold;
+
+ }
+/* part of the overal recap in a form of a graph */
+
+.recap .graph{
+  width: 75%;
+  height:100%;
+  background-color:rgba(193,193,193,0.05);
+  height:95%;
+  margin:10px;
+  border-radius: 5px;
+}
+.graph svg {
+ margin-left: 70px;
+ margin-top: 20px;
+
+}
+.mainAccess{
+  background-color:rgba(193,193,193,0.05);
+  display: flex;
+  flex-wrap: wrap;
+  width: 98%;
+  height: 45%;
+  align-items: center;
+  justify-content: space-around;
+  margin:auto;
+ border-radius: 5px;
+}
+
+.access{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:17%;
+  height: 90%;
+  background-color: rgba(193, 193, 193, 0.16);
+
+}
+
+.access i#access  {
+  color: #4F8494;
+
+  align-self: center;
+  font-size: 100;
+
+  margin: auto;
+}
+.access button{
+  align-self:flex-start;
+  width:100%;
+  height:20%;
+  background-color: #0C0C0E;
+  border: none;
+  top:90%;
+  color: white;
+  font-size: 17px;
+}
+.access button i {
+  color:white;
+  font-size: 17px;
+  text-align: center;
+}
+.access button:hover {
+  cursor: pointer;
+  color:#4F8494;
+}
+.access button:hover  i  {
+  color:#4F8494;
+  animation: moveLeft 0.1s linear 1;
+  margin-left: 10px;
+}
+
+/* animation part */
+
+@keyframes moveLeft {
+  from {
+    margin-right: 0px;
+  }
+  to {
+    margin-left: 10px;
+
+  }
+}
