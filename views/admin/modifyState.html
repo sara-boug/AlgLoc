@@ -10,7 +10,8 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://d3js.org/d3.v4.js"></script>
   <link rel="stylesheet" href="..\CSS\modifyState.css">
-  <script src="..\..\js\pagination.js"> </script>
+  <script src="../../js/Autocomplete.js"></script>
+
 </head>
 <body>
   <div class="sideBar">
@@ -47,6 +48,30 @@
           </div>
         </section>
       </div >
-      <script src="../../js/Autocomplete.js"></script>
+      <script src="..\..\js\pagination.js"> </script>
+      <script type="text/javascript">
+       var setting = { data : ["Aberdeen", "Abilene", "Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque",
+                        "Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque",
+                         "Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque",
+                        "Albany", "Albuquerque","Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque",
+                        "Albany", "Albuquerque","Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque",
+                        "Albany", "Albuquerque","Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque",
+                        "Aberdeen", "Abilene", "Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque",
+                                         "Akron", "Albany"],
+                   partContainer:document.getElementById('addState'),
+                   onePart:document.getElementById('OneState'),
+                   pagination:document.querySelector(".pagination .numbers"),
+                   limit:4,
+                   pagination_array_length:10,
+                   numbersContainer:".numbers",
+                   arrowSelector:"#pagination i"
+              }
 
+     pagination.template=(element , elementData) => {
+            element.childNodes[1].value= elementData;
+          }
+     pagination.setting=setting ;
+     pagination.forming_pagination();
+
+    </script>
     </body>
