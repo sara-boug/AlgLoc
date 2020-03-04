@@ -14,7 +14,7 @@ body {
   overflow:visible;
 }
 .sideBar{
-  width: 15%;
+  width: 19%;
 }
 .sideBar iframe{
   height: 100%;
@@ -52,17 +52,19 @@ section.left *{
 }
 section.left  button i {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
+  color: #047F8C;
 }
 section.left .add {
   width: 12%;
   height:100%;
-  background-color: #047F8C;
+  border:1px solid #047F8C;
+  background-color: rgba(0,0,0,0);
 
 }
 .main section.right {
 
-  width: 40%;
+  width: 50%;
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -70,7 +72,7 @@ section.left .add {
 }
 .search {
   width:100%;
-  height:8%;
+  height:10%;
 }
 
 .search div#autocomp{
@@ -121,6 +123,26 @@ div#autocomp  i {
   background-color: lightblue;
   cursor: pointer;
 }
+.sort {
+ display: flex;
+ width: 100%;
+ height:7%;
+ justify-content:space-around;
+}
+ .sort button {
+  height: 100%;
+  width:23%;
+  font-size: 25px;
+  background-color: rgba(0,0,0,0);
+  border: 0.5px solid white;
+color: white;
+ }
+ .sort button:hover  {
+   cursor: pointer;
+   background-color:rgba(128, 128, 128,0.2);
+
+}
+
 .addState {
   display: flex;
   flex-direction: column;
@@ -133,14 +155,14 @@ div#autocomp  i {
   flex-direction: row;
   justify-content: space-between;
   width:100%;
-  height: 45px;
+  height: 55px;
 }
 .oneState * {
   border: none;
   border-radius: 4px;
 }
 .oneState input {
-  width: 72%;
+  width: 65%;
   height: 100%;
   text-align: center;
   font-size: 20px;
@@ -153,16 +175,36 @@ div#autocomp  i {
   font-size: 20px;
 }
 .oneState .modify {
-  width: 12%;
+  width: 10%;
   height:100%;
-  background-color: #047F8C;
+  border:1px solid lightgray;
+  background-color: rgba(0,0,0,0);
+
+}
+.oneState .modify i {
+  color:  lightgray;
+  font-size: 25px;
 
 }
 .oneState .delete {
-  width: 12%;
+  width: 10%;
   height:100%;
-  background-color: #EE2828;
-
+  border:1px solid lightgray;
+  background-color: rgba(0,0,0,0);
+}
+.oneState .delete i {
+  color: lightgray;
+  font-size: 25px;
+}
+.oneState .confirm{
+  width: 10%;
+  height:100%;
+  border:1px solid gray;
+  background-color: rgba(0,0,0,0);
+}
+.oneState .confirm i{
+  color: gray;
+  font-size: 25px;
 }
 section.right .pagination {
   height:5%;
@@ -202,6 +244,10 @@ section.right .pagination {
 .oneState button.modify:hover , section.left .add:hover {
   cursor: pointer;
   background-color: rgba(4, 127, 140,0.7);
+}
+.oneState button.confirm:hover{
+   cursor: pointer;
+    background-color: rgba(0, 255, 0, 0.5);
 }
 /* handling pagination numbers hover effect*/
 .pagination .numbers a:hover {

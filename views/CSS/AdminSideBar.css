@@ -102,10 +102,13 @@ border-radius: 100%;
   margin-left: 10px;
   text-align: left;
 }
-
-
 /* sde bar hover */
-.sideBar i:hover {
-  color: #0f97a6;
+.upperPart div:hover i , .bottomPart div:hover  i {
+  color :#04B2D9;
   cursor: pointer;
+}
+.upperPart div:hover ,.bottomPart div:hover{
+    cursor: pointer;
+    border-bottom:1px solid #04B2D9;
+    color: #04B2D9;
 }

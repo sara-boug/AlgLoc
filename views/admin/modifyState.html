@@ -10,7 +10,7 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://d3js.org/d3.v4.js"></script>
   <link rel="stylesheet" href="..\CSS\modifyState.css">
-  <script src="../../js/Autocomplete.js"></script>
+  <script src="../../library/Autocomplete.js"></script>
 
 </head>
 <body>
@@ -28,50 +28,36 @@
             <input  id="input" class="input" type="text"/> <i class="fas fa-search"></i>
             <div id="autocomplete">
             </div>
-          </div>
-        </form>
-        <form class="addState" id="addState">
-          <div class="OneState" id="OneState">
-            <input type="text" placeholder="State" disabled/>
-            <button class="modify" type="submit"> <i class="fas fa-sliders-h"></i></buttom>
-              <button class="delete" type="submit"><i class="fas fa-minus-circle"></i> </button>
-            </div>
-          </form>
-          <div  class="pagination" id="pagination">
-            <i  id="left" class="fas fa-angle-double-left"></i>
-            <div class="numbers">
+                  </div>
+
+                </form>
+                <div class="sort">
+                    <button> <i class="fas fa-align-left"></i></button>
+                    <button><i class="fas fa-sort-alpha-up-alt"></i></button>
+                    <button> <i class="fas fa-sort-up"></i></button>
+                    <button><i class="fas fa-sort-down"></i></button>
+                </div>
+                <form class="addState" id="addState" method="get">
+                  <div class="OneState" id="OneState">
+                    <input type="text" placeholder="State" disabled/>
+                    <button class="modify" type="submit"> <i class="fas fa-sliders-h"></i></buttom>
+                      <button class="confirm" type="submit" disabled><i class="far fa-check-circle"></i> </button>
+                      <button class="delete" type="submit"><i class="fas fa-minus-circle"></i> </button>
+
+                    </div>
+                  </form>
+                  <div  class="pagination" id="pagination">
+                    <i  id="left" class="fas fa-angle-double-left"></i>
+                    <div class="numbers">
 
 
-            </div>
-            <i id="right" class="fas fa-angle-double-right"></i>
+                    </div>
+                    <i id="right" class="fas fa-angle-double-right"></i>
 
-          </div>
-        </section>
-      </div >
-      <script src="..\..\js\pagination.js"> </script>
-      <script type="text/javascript">
-       var setting = { data : ["Aberdeen", "Abilene", "Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque",
-                        "Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque",
-                         "Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque",
-                        "Albany", "Albuquerque","Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque",
-                        "Albany", "Albuquerque","Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque",
-                        "Albany", "Albuquerque","Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque",
-                        "Aberdeen", "Abilene", "Akron", "Albany", "Albuquerque","Akron", "Albany", "Albuquerque",
-                                         "Akron", "Albany"],
-                   partContainer:document.getElementById('addState'),
-                   onePart:document.getElementById('OneState'),
-                   pagination:document.querySelector(".pagination .numbers"),
-                   limit:4,
-                   pagination_array_length:10,
-                   numbersContainer:".numbers",
-                   arrowSelector:"#pagination i"
-              }
-
-     pagination.template=(element , elementData) => {
-            element.childNodes[1].value= elementData;
-          }
-     pagination.setting=setting ;
-     pagination.forming_pagination();
-
-    </script>
-    </body>
+                  </div>
+                </section>
+              </div >
+              <script src="..\..\library\pagination.js"> </script>
+              <script type="text/javascript" src="..\..\js\modifyState.js">
+            </script>
+          </body>

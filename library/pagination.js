@@ -21,7 +21,7 @@
        console.log(pagination.setting.pagNum);
        pagination.displayData(pagination.setting.maxNum[0].data)
        pagination.paginationNumber(pagination.fillArray(pagination.setting.maxNum.length,pagination.setting.pagination_array_length) , pagination.setting.pagination);
-       pagination.setting.pagination.firstElementChild.style.backgroundColor="rgb(4, 127, 140)";
+       pagination.setting.pagination.firstElementChild.style.border="1px solid white";
 
        pagination.handleClick(pagination.setting.maxNum);
 
@@ -135,13 +135,13 @@
    overallData=wholeData;
    return wholeData;
 }
-
 pagination.displayData=(data) => {
+
   pagination.setting.onePart.remove();//deleting this part in order to remove the empty input in the begining
   data.forEach((item , i, array)=>{
      if(i!=array.length) {
          var oneState=pagination.setting.onePart.cloneNode(true);
-         pagination.template(oneState,array[i]);
+         pagination.addclick(pagination.template(oneState,array[i]));
          pagination.setting.partContainer.appendChild(oneState);
      }
  });
@@ -156,6 +156,7 @@ pagination.displayData=(data) => {
         if(data[i].index==parseInt(item.innerHTML)){
              displayedData=data[i].data;
              pagination.displayData(data[i].data);
+
           return data[i].data;
         }
       }
@@ -165,10 +166,11 @@ pagination.displayData=(data) => {
 
 pagination.stylePagiNumbers= (item)=>{
   document.querySelectorAll(pagination.setting.numbersContainer+" a").forEach( function(item) {
-    item.style.backgroundColor="rgb(4, 127, 140,0)" ;
+  item.style.border="none";
   });
-  item.style.backgroundColor="rgb(4, 127, 140,1)" ;
+item.style.border="1px solid lightgray"; ;
   }
+
 
 return pagination;
 }
