@@ -1,21 +1,21 @@
 body *{
 font-size: 20px;
 }
-section.left * {
+form.left * {
 border-radius: 0;
 text-align: center;
 }
-section.left {
+form.left {
  /*display: flex;
  //flex-direction: column;*/
 }
-section.left select {
+form.left select {
 width: 42%;
 }
-section.left input {
+form.left input {
 width: 42%;
 }
-section.left button {
+form.left button {
  width: 10%;
 }
 

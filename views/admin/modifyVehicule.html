@@ -10,7 +10,7 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://d3js.org/d3.v4.js"></script>
   <link rel="stylesheet" href="..\CSS\admin\modifyState.css">
-  <link rel="stylesheet" href="..\CSS\admin\modifyAgency.css">
+  <link rel="stylesheet" href="..\CSS\admin\modifyVehicule.css">
 
   <script src="../../library/Autocomplete.js"></script>
   <script src="../../library/clicksEffects.js"></script>
@@ -22,17 +22,28 @@
   </div>
   <div class="main">
     <form class="left">
-      <input type="text" placeholder="Postal Code"required />
-      <input type="number" placeholder="Phone Number"required/>
-      <input type="email" placeholder="City"required/>
-      <select>
-        <option>Alger</option>
-      </select>
-        <select>
-          <option>Algiers</option>
-        </select>
-          <input type="address" placeholder="Agency adress"required/>
-          <input type="Web Site" placeholder="Agency adress"required/>
+    <select  required>  <option>Agency</option>  </select>
+    <select required> <option>Model</option> </select>
+      <input type="text" placeholder="Agency"required />
+      <input type="number" placeholder="Model"required/>
+      <input type="text" placeholder="Fuel"required/>
+      <input type="number" placeholder="Registration number"required/>
+      <input type="number" placeholder="Rental fee per day"required/>
+      <input type="number" placeholder="Vehicle insurance fee"required/>
+      <div> </div>
+      <input type="address" placeholder="Passengers"required/>
+      <input type="Web S" placeholder="Agency adress"required/>
+      <div class="radio">
+       <p> Vehicule Reserved </p>
+       <label>yes</label>  <input  id="yes" type="radio"/>
+       <label>no</label>  <input id="no" type="radio"/>
+      </div>
+      <div class="radio">
+       <p>Gear Box</p>
+       <label>Manual</label>  <input  id="yes" type="radio"/>
+       <label>Automatic</label>  <input id="no" type="radio"/>
+      </div>
+
       <button class="add" type="submit"><i class="fas fa-plus-circle"></i></button>
     </form>
     <section class="right">
@@ -52,38 +63,32 @@
       </div>
       <div class="addElement" id="addElement">
         <form class="oneElement" id="oneElement">
-          <input type="text" placeholder="Postal Code"required />
-          <input type="number" placeholder="Phone Number"required/>
-          <input type="email" placeholder="City"required/>
-          <select>
-            <option>Alger</option>
-          </select>
-            <select>
-              <option>Algiers</option>
-            </select>
-              <input type="address" placeholder="Agency adress"required/>
-              <input type="Web Site" placeholder="Agency adress"required/>
+          <select  required>  <option>Agency</option>  </select>
+          <select required> <option>Model</option> </select>
+            <input type="text" placeholder="Agency"required   disabled/>
+            <input type="number" placeholder="Model"required  disabled/>
+            <input type="text" placeholder="Fuel"required  disabled/>
+            <input type="number" placeholder="Registration number"required  disabled/>
+            <input type="number" placeholder="Rental fee per day"required  disabled/>
+            <input type="number" placeholder="Vehicle insurance fee"required  disabled/>
+            <input type="address" placeholder="Passengers"required  disabled/>
+            <input type="Web S" placeholder="Agency adress"required  disabled/>
+            <div class="radio">
+             <p> Vehicule Reserved </p>
+             <label>yes</label>  <input  id="yes" type="radio"/>
+             <label>no</label>  <input id="no" type="radio"/>
+            </div>
+            <div class="radio">
+             <p>Gear Box</p>
+               <label>Manual</label>  <input  id="yes" type="radio"/>
+               <label>Automatic</label>  <input id="no" type="radio"/>
+            </div>
               <button class="modify" type="submit"> <i class="fas fa-sliders-h"></i></button>
               <button class="confirm" type="submit" disabled><i class="far fa-check-circle"></i> </button>
               <button class="delete" type="submit"><i class="fas fa-minus-circle"></i> </button>
             </form>
 
-            <form class="oneElement" id="oneElement">
-              <input type="text" placeholder="Postal Code"required />
-              <input type="number" placeholder="Phone Number"required/>
-              <input type="email" placeholder="City"required/>
-              <select>
-                <option>Alger</option>
-              </select>
-                <select>
-                  <option>Algiers</option>
-                </select>
-                  <input type="address" placeholder="Agency adress"required/>
-                  <input type="Web Site" placeholder="Agency adress"required/>
-                  <button class="modify" type="submit"> <i class="fas fa-sliders-h"></i></button>
-                  <button class="confirm" type="submit" disabled><i class="far fa-check-circle"></i> </button>
-                  <button class="delete" type="submit"><i class="fas fa-minus-circle"></i> </button>
-                </form>
+
 
           </div>
           <div  class="pagination" id="pagination">
@@ -95,6 +100,6 @@
         </section>
       </div >
       <script src="..\..\library\pagination.js"> </script>
-      <script type="text/javascript" src="..\..\js\admin\modifyAgency.js">
+      <script type="text/javascript" src="..\..\js\admin\modifyVehicule.js">
       </script>
             </body>

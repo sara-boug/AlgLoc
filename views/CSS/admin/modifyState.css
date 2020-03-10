@@ -1,7 +1,17 @@
+/*custom scroll bar*/
+
+::-webkit-scrollbar {  width: 10px;}
+::-webkit-scrollbar-track {  background:  rgba(193,193,193,0.05);}
+::-webkit-scrollbar-thumb {  background: rgba(193,193,193,0.1);}
+::-webkit-scrollbar-thumb:hover {  background: #555;}
+
+html {
+ overflow: auto;
+}
 *{
   font-family: 'Advent Pro';
   overflow:visible;
-  font-size: 20px;
+  font-size: 15px;
 }
 body {
   background-color:#1b1818;
@@ -12,8 +22,7 @@ body {
   width:1366px;
   outline: none;
   color: white;
-  overflow:visible;
-}
+ }
 .sideBar{
   width: 19%;
 }
@@ -33,11 +42,10 @@ body {
 * select {
   background: rgba(12, 12, 14, 0.43);
   border:1px solid gray;
-  font-size: 16px;
   font-weight: lighter;
   color: white;
 }
-.main section.left{
+.main form.left{
   align-self: center;
   width:40%;
   height: 8%;
@@ -45,26 +53,25 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-section.left input {
+form.left input {
   background: rgba(12, 12, 14, 0.43);
   border:1px solid gray;
   width: 85%;
   height: 100%;
   text-align: center;
-  font-size: 16px;
   color: white;
   font-weight: lighter;
   letter-spacing: 1px;
 }
-section.left *{
+form.left *{
   border: none;
 }
-section.left  button i {
+form.left  button i {
   color: white;
   font-size: 25px;
   color: lightgray;
 }
-section.left .add {
+form.left .add {
   width: 12%;
   height:100%;
   border:1px solid lightgray;
@@ -109,7 +116,7 @@ div#autocomp  i {
 }
 div#autocomp  i:hover {
   cursor: pointer;
-  transform: sscale(1.2);
+  transform: scale(1.2);
 
 
 }
@@ -180,7 +187,6 @@ color: white;
   width: 65%;
   height: 100%;
   text-align: center;
-  font-size: 17px;
   color: white;
   font-weight: lighter;
   letter-spacing: 1px;
@@ -256,11 +262,11 @@ section.right .pagination {
 /* hover effects*/
 .oneElement button.delete:hover{
   cursor: pointer;
-  background-color: rgba(238, 40, 40, 0.7);
+  background-color: rgba(238, 40, 40, 1);
 }
-.oneElement button.modify:hover , section.left .add:hover {
+.oneElement button.modify:hover , form.left .add:hover {
   cursor: pointer;
-  background-color: rgba(4, 127, 140,0.7);
+  background-color: rgba(4, 127, 140,1);
 }
 /*.oneState button.confirm:hover{
    cursor: pointer;

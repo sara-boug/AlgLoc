@@ -6,12 +6,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
-
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://d3js.org/d3.v4.js"></script>
   <link rel="stylesheet" href="..\CSS\admin\modifyState.css">
-  <link rel="stylesheet" href="..\CSS\admin\modifyCity.css">
-
+  <link rel="stylesheet" href="..\CSS\admin\modifyCategory.css">
   <script src="../../library/Autocomplete.js"></script>
   <script src="../../library/clicksEffects.js"></script>
 </head>
@@ -21,18 +19,15 @@
   </div>
   <div class="main">
     <form class="left">
-      <select>
-        <option>Alger</option>
-        <option>cheraga</option>
-        <option>Ouled Fayet</option>
-      </select>
-      <input type="text" placeholder="City" required/>
+
+      <input type="text" placeholder="Brand" required/>
       <button class="add" type="submit"><i class="fas fa-plus-circle"></i></button>
+
     </form>
     <section class="right">
       <form class="search">
         <div id="autocomp">
-          <input  id="input" class="input" type="text"/> <i class="fas fa-search"></i>
+          <input  id="input" class="input" type="text" require/> <i class="fas fa-search"></i>
           <div id="autocomplete">
           </div>
         </div>
@@ -46,26 +41,26 @@
       </div>
       <div class="addElement" id="addElement" method="get">
         <form class="oneElement" id="oneElement">
-           <select>
-             <option>Alger</option>
-             <option>cheraga</option>
-             <option>Ouled Fayet</option>
-           <select>
-          <input type="text" placeholder="City" disabled required/>
+          <input type="text" placeholder="Brand" disabled required/>
           <button class="modify" type="submit"> <i class="fas fa-sliders-h"></i></button>
           <button class="confirm" type="submit" disabled><i class="far fa-check-circle"></i> </button>
           <button class="delete" type="submit"><i class="fas fa-minus-circle"></i> </button>
+
         </form>
+
       </div>
       <div  class="pagination" id="pagination">
         <i  id="left" class="fas fa-angle-double-left"></i>
         <div class="numbers">
+
+
         </div>
         <i id="right" class="fas fa-angle-double-right"></i>
+
       </div>
     </section>
   </div >
   <script src="..\..\library\pagination.js"> </script>
-  <script type="text/javascript" src="..\..\js\admin\modifyCity.js">
+  <script type="text/javascript" src="..\..\js\admin\modifyBrand.js">
   </script>
 </body>

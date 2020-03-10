@@ -10,7 +10,7 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://d3js.org/d3.v4.js"></script>
   <link rel="stylesheet" href="..\CSS\admin\modifyState.css">
-  <link rel="stylesheet" href="..\CSS\admin\modifyCity.css">
+  <link rel="stylesheet" href="..\CSS\admin\modifyModel.css">
 
   <script src="../../library/Autocomplete.js"></script>
   <script src="../../library/clicksEffects.js"></script>
@@ -21,12 +21,13 @@
   </div>
   <div class="main">
     <form class="left">
-      <select>
-        <option>Alger</option>
-        <option>cheraga</option>
-        <option>Ouled Fayet</option>
+      <select placeholder="Categories">
+        <option>Categories</option>
       </select>
-      <input type="text" placeholder="City" required/>
+      <select placeholder="Brand">
+        <option>Brand</option>
+      </select>
+      <input type="text" placeholder="Model" required/>
       <button class="add" type="submit"><i class="fas fa-plus-circle"></i></button>
     </form>
     <section class="right">
@@ -46,12 +47,13 @@
       </div>
       <div class="addElement" id="addElement" method="get">
         <form class="oneElement" id="oneElement">
-           <select>
-             <option>Alger</option>
-             <option>cheraga</option>
-             <option>Ouled Fayet</option>
-           <select>
-          <input type="text" placeholder="City" disabled required/>
+          <select placeholder="Categories">
+            <option>Categories</option>
+          </select>
+          <select placeholder="Brand">
+            <option>Brand</option>
+          </select>
+          <input type="text" placeholder="Model" disabled required/>
           <button class="modify" type="submit"> <i class="fas fa-sliders-h"></i></button>
           <button class="confirm" type="submit" disabled><i class="far fa-check-circle"></i> </button>
           <button class="delete" type="submit"><i class="fas fa-minus-circle"></i> </button>
@@ -66,6 +68,6 @@
     </section>
   </div >
   <script src="..\..\library\pagination.js"> </script>
-  <script type="text/javascript" src="..\..\js\admin\modifyCity.js">
+  <script type="text/javascript" src="..\..\js\admin\modifyModel.js">
   </script>
 </body>

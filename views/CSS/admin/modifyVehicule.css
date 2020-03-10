@@ -1,5 +1,5 @@
 *{
-  font-size: 17px;
+  font-size: 15px;
   }
 .main form.left{
   display: flex;
@@ -11,10 +11,23 @@
   padding: 20px;
 }
 .main form.left * {
-  height: 7%;
+  height: 6%;
   width: 100%;
 
+}
+.main form.left .radio {
+ display: flex;
+ justify-content: space-around;
 
+}
+form.left  div.radio * {
+ width: auto;
+ height: 50%;
+ align-self: center;
+ }
+form.left  div.radio p {
+
+ width: 50%;
 }
 .main form.left button.add i{
   margin-bottom: 20px;
@@ -24,6 +37,7 @@
   width: 65%;
   height: 90%;
   padding: 20px;
+  font-size:15px;
 }
 .addElement {
  justify-content: space-between;
@@ -32,8 +46,8 @@
   margin-bottom: 10px;
 }
 .addElement .oneElement{
-  margin-top:5%;
-  flex-wrap: wrap;
+  margin-top: 20px;
+   flex-wrap: wrap;
   height: 10%;
 }
 .addElement .oneElement *{
@@ -41,5 +55,13 @@
   height: 90%;
   margin:5px;
 }
+.addElement .oneElement .radio {
+ display: flex;
+ justify-content: space-around;
 
- 
+}
+.addElement .oneElement  div.radio *{
+ width: auto;
+ height: 50%;
+ align-self: center;
+ }

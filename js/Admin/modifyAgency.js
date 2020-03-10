@@ -17,8 +17,8 @@ pagination.addclick =(element) =>{
         e.preventDefault();
          var modiButton=element.childNodes[17];
             click.modify(modiButton,0);
-              element.childNodes[4].disabled=false;
-      });
+            click.enable(element);
+       });
       }
     });
   }

@@ -18,8 +18,15 @@ click.modify =(modiButton ,i) =>{
   modiButton.disabled=false;
   modiButton.style.border="1px solid lightgray";
   modiButton.childNodes[i].style.color="lightgray";
-  modiButton.onmouseover= function(){ this.style.cursor="pointer"; this.style.backgroundColor="rgba(0, 255, 0, 0.5)"; };
+  modiButton.onmouseover= function(){ this.style.cursor="pointer"; this.style.backgroundColor="rgba(0, 255, 0, 1)"; };
   modiButton.onmouseout= function(){ this.style.cursor="pointer"; this.style.backgroundColor="rgba(0, 255, 0, 0)"; };
+}
+click.enable =(element) =>{
+  element.childNodes.forEach((item) => {
+    item.disabled=false;
+
+  });
+
 }
 return click;
 }
