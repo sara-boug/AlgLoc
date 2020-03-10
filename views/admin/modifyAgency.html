@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <link rel="stylesheet" href="..\CSS\admin\modifyState.css">
+  <link rel="stylesheet" href="..\CSS\admin\modifyAgency.css">
+
+  <script src="../../library/Autocomplete.js"></script>
+  <script src="../../library/clicksEffects.js"></script>
+
+</head>
+<body>
+  <div class="sideBar">
+    <iframe src="adminsideBar.html"> </iframe>
+  </div>
+  <div class="main">
+    <section class="left">
+      <input type="text" placeholder="Postal Code"required />
+      <input type="number" placeholder="Phone Number"required/>
+      <input type="email" placeholder="City"required/>
+      <select>
+        <option>Alger</option>
+      </select>
+        <select>
+          <option>Algiers</option>
+        </select>
+          <input type="address" placeholder="Agency adress"required/>
+          <input type="Web Site" placeholder="Agency adress"required/>
+      <button class="add" type="submit"><i class="fas fa-plus-circle"></i></button>
+    </section>
+    <section class="right">
+      <form class="search">
+        <div id="autocomp">
+          <input  id="input" class="input" type="text"/> <i class="fas fa-search"></i>
+          <div id="autocomplete">
+          </div>
+        </div>
+
+      </form>
+      <div class="sort">
+        <button> <i class="fas fa-align-left"></i></button>
+        <button><i class="fas fa-sort-alpha-up-alt"></i></button>
+        <button> <i class="fas fa-sort-up"></i></button>
+        <button><i class="fas fa-sort-down"></i></button>
+      </div>
+      <div class="addElement" id="addElement">
+        <form class="oneElement" id="oneElement">
+          <input type="text" placeholder="Postal Code"required />
+          <input type="number" placeholder="Phone Number"required/>
+          <input type="email" placeholder="City"required/>
+          <select>
+            <option>Alger</option>
+          </select>
+            <select>
+              <option>Algiers</option>
+            </select>
+              <input type="address" placeholder="Agency adress"required/>
+              <input type="Web Site" placeholder="Agency adress"required/>
+              <button class="modify" type="submit"> <i class="fas fa-sliders-h"></i></button>
+              <button class="confirm" type="submit" disabled><i class="far fa-check-circle"></i> </button>
+              <button class="delete" type="submit"><i class="fas fa-minus-circle"></i> </button>
+            </form>
+
+            <form class="oneElement" id="oneElement">
+              <input type="text" placeholder="Postal Code"required />
+              <input type="number" placeholder="Phone Number"required/>
+              <input type="email" placeholder="City"required/>
+              <select>
+                <option>Alger</option>
+              </select>
+                <select>
+                  <option>Algiers</option>
+                </select>
+                  <input type="address" placeholder="Agency adress"required/>
+                  <input type="Web Site" placeholder="Agency adress"required/>
+                  <button class="modify" type="submit"> <i class="fas fa-sliders-h"></i></button>
+                  <button class="confirm" type="submit" disabled><i class="far fa-check-circle"></i> </button>
+                  <button class="delete" type="submit"><i class="fas fa-minus-circle"></i> </button>
+                </form>
+
+          </div>
+          <div  class="pagination" id="pagination">
+            <i  id="left" class="fas fa-angle-double-left"></i>
+            <div class="numbers">
+            </div>
+            <i id="right" class="fas fa-angle-double-right"></i>
+          </div>
+        </section>
+      </div >
+      <script src="..\..\library\pagination.js"> </script>
+      <script type="text/javascript" src="..\..\js\admin\modifyAgency.js">
+      </script>
+            </body>

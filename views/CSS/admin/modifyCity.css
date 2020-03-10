@@ -1,0 +1,34 @@
+body *{
+font-size: 20px;
+}
+section.left * {
+border-radius: 0;
+text-align: center;
+}
+section.left {
+ /*display: flex;
+ //flex-direction: column;*/
+}
+section.left select {
+width: 42%;
+}
+section.left input {
+width: 42%;
+}
+section.left button {
+ width: 10%;
+}
+
+form.oneElement *{
+border-radius: 0;
+}
+form.oneElement select {
+width: 35%;
+}
+form.oneElement input {
+width: 35%;
+}
+form.oneElement .modify ,form.oneElement .confirm ,form.oneElement .delete {
+ width: 8%;
+
+}

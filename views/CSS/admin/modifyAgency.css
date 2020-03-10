@@ -1,0 +1,50 @@
+*{
+  font-size: 17px;
+  }
+.main section.left{
+  display: flex;
+  flex-direction: column;
+  width:25%;
+  height: 90%;
+  justify-content: space-between;
+  background-color: rgba(193,193,193,0.05);
+  padding: 20px;
+}
+.main section.left * {
+  height: 7%;
+  width: 100%;
+
+
+}
+.main section.left button.add i{
+  margin-bottom: 20px;
+}
+.main section.right {
+  background: rgba(193,193,193,0.05);
+  width: 65%;
+  height: 90%;
+  padding: 20px;
+}
+.addElement {
+ justify-content: space-between;
+  overflow: auto;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.addElement .oneElement{
+  margin-top:5%;
+  flex-wrap: wrap;
+  height: 10%;
+}
+.addElement .oneElement *{
+  width: 47%;
+  height: 90%;
+  margin:5px;
+}
+
+
+/*custom scroll bar*/
+::-webkit-scrollbar {  width: 10px;}
+::-webkit-scrollbar-track {  background:  rgba(193,193,193,0.05);}
+::-webkit-scrollbar-thumb {  background: rgba(193,193,193,0.1);}
+::-webkit-scrollbar-thumb:hover {  background: #555;}

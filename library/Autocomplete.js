@@ -59,8 +59,6 @@ function autocmplete( elementsContainer, data) {
    document.body.addEventListener("click", ()=>{
       remove(elementsContainer);   });
   }
-
-
   $(document).ready(function(){
    var data=  ["January","February","March","April","May","June","July","August","September","October","November","December"];
    var elementsContainer= document.getElementById('autocomplete');
